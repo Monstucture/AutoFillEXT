@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritz Auto Quote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="input-group">
+        <label for="site-selection">Select Site:</label>
+        <select id="site-selection">
+            <option value="allied">Allied</option>
+            <option value="sagesure">Sagesure</option>
+            <option value="ari">ARI</option>
+        </select>
+    </div>
+
+    <main>
+        <form id="quote-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="input-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="input-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+                <div class="input-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" id="dob" name="dob">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address Information</legend>
+                <div class="input-group">
+                    <label for="address1">Address 1:</label>
+                    <input type="text" id="address1" name="address1">
+                </div>
+                <div class="input-group">
+                    <label for="address2">Address 2:</label>
+                    <input type="text" id="address2" name="address2">
+                </div>
+                <div class="input-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="input-group">
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dwelling Information</legend>
+                <div class="input-group">
+                    <label for="dA">Field dA:</label>
+                    <input type="text" id="dA" name="dA">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="ddA" name="ddA" readonly hidden>
+                    <input type="text" id="dB" name="dB" readonly hidden>
+                    <input type="text" id="dC" name="dC" readonly hidden>
+                    <input type="text" id="dD" name="dD" readonly hidden>
+                    <input type="text" id="dE" name="dE" readonly hidden>
+                    <input type="text" id="dF" name="dF" readonly hidden>
+                    <input type="text" id="aop" name="aop" readonly hidden>
+                    <input type="text" id="wh" name="wh" readonly hidden>
+                </div>
+
+                <!-- House info -->
+                <div class="input-group">
+                    <label for="year_built">Year Built:</label>
+                    <input type="text" id="year_built" name="year_built">
+                </div>
+                <div class="input-group">
+                    <label for="sqft">SQFT:</label>
+                    <input type="text" id="sqft" name="sqft">
+                </div>
+                <div class="input-group">
+                    <label for="st">Stories:</label>
+                    <select id="st" name="st">
+                        <option value="">Stories</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="roof_year">Roof Year:</label>
+                    <input type="text" id="roof_year" name="roof_year">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="water_year" name="water_year" hidden>
+                </div>
+                <div class="input-group">
+                    <label for="roof_shape">Roof Shape:</label>
+                    <select id="roof_shape" name="roof_shape">
+                        <option value="">Roof Shape</option>
+                        <!-- Options will be dynamically populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="roof_mat">Roof Material:</label>
+                    <select id="roof_mat" name="roof_mat">
+                        <option value="">Select Roof Material</option>
+                        <!-- Options will be dynamically populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="const_material">Construction Material:</label>
+                    <select id="const_material" name="const_material">
+                        <option value="">Select Construction Material</option>
+                        <!-- Options will be dynamically populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="mat">Exterior Material:</label>
+                    <select id="mat" name="mat">
+                        <option value="">Select Exterior Material</option>
+                        <!-- Options will be dynamically populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="purchase_date">Purchase Date:</label>
+                    <input type="text" id="purchase_date" name="purchase_date">
+                </div>
+
+                <!-- Hard code stuff -->
+                <div class="input-group">
+                    <input type="text" id="foundation" name="foundation" readonly hidden>
+                    <input type="text" id="payplan" name="payplan" readonly hidden>
+                    <input type="text" id="payor" name="payor" readonly hidden>
+                    <input type="text" id="housesize" name="housesize" readonly hidden>
+                    <input type="text" id="personal_statues" name="personal_statues" readonly hidden>
+                    <input type="text" id="Inspermission" name="Inspermission" readonly hidden>
+                    <input type="text" id="Ins_score" name="Ins_score" readonly hidden>
+                    <input type="text" id="Laps" name="Laps" readonly hidden>
+                    <input type="text" id="heater_location" name="heater_location" readonly hidden>
+                    <input type="text" id="resident_type" name="resident_type" readonly hidden>
+                    <input type="text" id="usage" name="usage" readonly hidden>
+                    <input type="text" id="option1" name="option1" readonly hidden>
+                    <input type="text" id="option2" name="option2" readonly hidden>
+                    <input type="text" id="waterCov" name="waterCov" readonly hidden>
+
+                    <!-- sagesure hardcode -->
+                    <!-- TODO: Adding the hardcode variable -->
+                    <input type="text" id="Laps" name="Laps" readonly hidden>
+                    <div class="input-group" style="display: none;">
+                        <select id="Co_app"></select>
+                        <input type="text" id="PriorCarrier" name="PriorCarrier" readonly hidden>
+                        <input type="text" id="c1" name="c1" readonly hidden>
+                        <select id="x1"></select>
+                        <select id="x2"></select>
+                        <select id="x3"></select>
+                        <select id="x4"></select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="button" id="autofill">Autofill</button>
+                <button type="button" id="reset-fields">Reset</button>
+                <button type="button" id="save">Save</button>
+                <button type="button" id="load">Load</button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+    "name": "Ritz Auto Quote",
+    "version": "0.2",
+    "description": "A Chrome extension for auto-filling quotes >:)",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.alliedtrustagents.com/*",
+                "*://agents.sagesure.com/*",
+                "*://isi.americanriskins.com/*",
+                "*://cypress.cogisi.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "*://www.alliedtrustagents.com/*",
+        "*://agents.sagesure.com/*",
+        "*://isi.americanriskins.com/*",
+        "*://cypress.cogisi.com/*"
+    ]
+}
