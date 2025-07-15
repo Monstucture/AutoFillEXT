@@ -1,6 +1,6 @@
 {
     "name": "WORKING Auto Quote",
-    "version": "0.7",
+    "version": "0.11",
     "description": "A Chrome extension for auto-filling quotes >:)",
     "manifest_version": 3,
     "action": {

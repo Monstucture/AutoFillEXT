@@ -79,14 +79,14 @@
                     
                     <!-- Hidden coverage fields -->
                     <div class="input-group" style="display: none;">
-                        <input type="text" id="ddA" name="ddA" readonly>
-                        <input type="text" id="dB" name="dB" readonly>
-                        <input type="text" id="dC" name="dC" readonly>
-                        <input type="text" id="dD" name="dD" readonly>
-                        <input type="text" id="dE" name="dE" readonly>
-                        <input type="text" id="dF" name="dF" readonly>
-                        <input type="text" id="aop" name="aop" readonly>
-                        <input type="text" id="wh" name="wh" readonly>
+                        <input type="text" id="ddA" name="ddA" readonly aria-label="Dwelling Coverage Display">
+                        <input type="text" id="dB" name="dB" readonly aria-label="Coverage B Limit">
+                        <input type="text" id="dC" name="dC" readonly aria-label="Coverage C Limit">
+                        <input type="text" id="dD" name="dD" readonly aria-label="Loss of Use Coverage">
+                        <input type="text" id="dE" name="dE" readonly aria-label="Liability Coverage">
+                        <input type="text" id="dF" name="dF" readonly aria-label="Medical Coverage">
+                        <input type="text" id="aop" name="aop" readonly aria-label="All Other Perils Deductible">
+                        <input type="text" id="wh" name="wh" readonly aria-label="Wind Hail Deductible">
                     </div>
 
                     <div class="input-group">
@@ -106,17 +106,17 @@
                         </select>
                     </div>
                     <div class="input-group">
-                        <label for="roof_year">Roof Year:</label>
+                        <label for="roof_year" aria-label="Year roof installed">Roof Year:</label>
                         <input type="text" id="roof_year" name="roof_year" placeholder="YYYY">
                     </div>
                     <div class="input-group">
-                        <label for="roof_shape">Roof Shape:</label>
+                        <label for="roof_shape" aria-label="Roof shape *">Roof Shape:</label>
                         <select id="roof_shape" name="roof_shape">
                             <option value="">Select Roof Shape</option>
                         </select>
                     </div>
                     <div class="input-group">
-                        <label for="roof_mat">Roof Material:</label>
+                        <label for="roof_mat" aria-label="Roof covering type">Roof Material:</label>
                         <select id="roof_mat" name="roof_mat">
                             <option value="">Select Roof Material</option>
                         </select>
@@ -140,32 +140,32 @@
 
                     <!-- Hidden fields for site-specific data -->
                     <div class="input-group" style="display: none;">
-                        <input type="text" id="foundation" name="foundation" readonly>
-                        <input type="text" id="payplan" name="payplan" readonly>
-                        <input type="text" id="payor" name="payor" readonly>
-                        <input type="text" id="housesize" name="housesize" readonly>
-                        <input type="text" id="personal_statues" name="personal_statues" readonly>
-                        <input type="text" id="Inspermission" name="Inspermission" readonly>
-                        <input type="text" id="Ins_score" name="Ins_score" readonly>
-                        <input type="text" id="Laps" name="Laps" readonly>
-                        <input type="text" id="heater_location" name="heater_location" readonly>
-                        <input type="text" id="resident_type" name="resident_type" readonly>
-                        <input type="text" id="usage" name="usage" readonly>
-                        <input type="text" id="option1" name="option1" readonly>
-                        <input type="text" id="option2" name="option2" readonly>
-                        <input type="text" id="waterCov" name="waterCov" readonly>
-                        <input type="text" id="water_year" name="water_year" readonly>
+                        <input type="text" id="foundation" name="foundation" readonly aria-label="Foundation Type">
+                        <input type="text" id="payplan" name="payplan" readonly aria-label="Payment Plan">
+                        <input type="text" id="payor" name="payor" readonly aria-label="Payor Code">
+                        <input type="text" id="housesize" name="housesize" readonly aria-label="Household Size">
+                        <input type="text" id="personal_statues" name="personal_statues" readonly aria-label="Personal Status">
+                        <input type="text" id="Inspermission" name="Inspermission" readonly aria-label="Insurance Permission">
+                        <input type="text" id="Ins_score" name="Ins_score" readonly aria-label="Insurance Score">
+                        <input type="text" id="Laps" name="Laps" readonly aria-label="Lapse in Coverage">
+                        <input type="text" id="heater_location" name="heater_location" readonly aria-label="Heater Location">
+                        <input type="text" id="resident_type" name="resident_type" readonly aria-label="Resident Type">
+                        <input type="text" id="usage" name="usage" readonly aria-label="Usage Type">
+                        <input type="text" id="option1" name="option1" readonly aria-label="Option 1">
+                        <input type="text" id="option2" name="option2" readonly aria-label="Option 2">
+                        <input type="text" id="waterCov" name="waterCov" readonly aria-label="Water Coverage">
+                        <input type="text" id="water_year" name="water_year" readonly aria-label="Water Heater Year">
                     </div>
 
                     <!-- SageSure specific hidden fields -->
                     <div class="input-group" style="display: none;">
-                        <select id="Co_app" title="Co-applicant"></select>
-                        <input type="text" id="PriorCarrier" name="PriorCarrier" readonly>
-                        <input type="text" id="c1" name="c1" readonly>
-                        <select id="x1" title="Option X1"></select>
-                        <select id="x2" title="Option X2"></select>
-                        <select id="x3" title="Option X3"></select>
-                        <select id="x4" title="Option X4"></select>
+                        <select id="Co_app" title="Co-applicant" aria-label="Co-applicant Indicator"></select>
+                        <input type="text" id="PriorCarrier" name="PriorCarrier" readonly aria-label="Prior Carrier">
+                        <input type="text" id="c1" name="c1" readonly aria-label="Masonry Veneer Percentage">
+                        <select id="x1" title="Option X1" aria-label="Insurance Score Range Estimate Indicator"></select>
+                        <select id="x2" title="Option X2" aria-label="SSN Required Indicator"></select>
+                        <select id="x3" title="Option X3" aria-label="Personal Property Replacement Cost"></select>
+                        <select id="x4" title="Option X4" aria-label="Trampoline Coverage"></select>
                     </div>
                 </fieldset>
 
